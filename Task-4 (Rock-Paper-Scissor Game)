@@ -93,7 +93,7 @@ while True:
     else:
         print("<== Computer wins ==>")
     ans=input("Do you want to play again?\n(Y/N) :")
-    if ans== "n" or "N":
+    if ans=="N":
         print("Thanks for Playing")
         print("Exiting......")
         break
