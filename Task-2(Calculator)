@@ -1,0 +1,41 @@
+#creating a calcualtor to perform mathematical operations on two numbers
+#i have added on/off for a little user interface
+
+print("welcome to calculator interface")
+start=input("would u like to turn on the calcualtor\npress y/n? \nenter ur choice :")
+if start == ("y"):
+    print("turning on calculator......")
+    x=int(input("enter a number: "))
+    y=int(input("enter a number: "))
+
+    operation = input(
+        "select a mathematical operation to perform from following operations\n1.addition(+)\n2.substrtaction(-)\n3.division(/)\n4.multiplication(*)\n5.turn off calculator(press(N))\nenter your operation of choice :")
+
+    #performing four operations on two numbers
+    if operation == ("+"):
+        print("addition of two numbers result is:", x + y)
+
+    elif operation == ("-"):
+        print("substraction of two numbers result is:", x - y)
+
+    elif operation == ("*"):
+        print("multipliaction of two numbers result is:", x * y)
+
+    elif operation == ("/"):
+        print("division of two numbers result is:", x / y)
+
+    elif operation == "n":
+        print("exiting.......")
+
+
+    else:
+        print("invalid operation")
+        print("check the available operations for an example")
+
+
+elif start == ("n"):
+    print("EXITING......")
+
+else:
+    print("select from given options---- y/n")
+
